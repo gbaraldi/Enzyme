@@ -13,7 +13,7 @@ midconcat(x, y) = (x, concat(y...)...)
 
 metaconcat3(x, y, z) = concat(x..., y..., z...)
 
-function mixed_metasumsq(f, args...) 
+function mixed_metasumsq(f, args...)
 	res = 0.0
 	x = f(args...)
 	for v in x
@@ -23,7 +23,7 @@ function mixed_metasumsq(f, args...)
 	return res
 end
 
-function mixed_metasumsq3(f, args...) 
+function mixed_metasumsq3(f, args...)
 	res = 0.0
 	x = f(args...)
 	for v in x
@@ -99,7 +99,7 @@ end
             "dx == 0",
             [((0.0, [0.0]), (0.0, [0.0])), ((0.0, [0.0]), (0.0, [0.0]))],
             [((4.0, [5.4]), (6.0, [6.28])), ((15.8, [94.0]), (22.4, [112.0]))],
-            [((3 * 4.0, [3 * 5.4]), (3 * 6.0, [3 * 6.28])), ((3 * 15.8, [3 * 94.0]), (3 * 22.4, [3 * 112.0]))],
+            [((3 * 4.0, [3 * 5.4]), (3 * 6.0, [3 * 6.28])), ((3 * 15.8, [3 * 94.0]), (3 * 22.4, [3 * 112.0]))],  
         ),
         (
             "dx != 0",
